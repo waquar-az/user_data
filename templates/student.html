@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <!-- <meta name="viewport" content="width=device-width,">  -->
+    
+    <title>DOCUMENT</title>
+     <link rel='stylesheet' type='text/css' href='static/style.css'>
+</head>
+  <body>
+      <div class='adduser'>
+              <form action='{{url_for('addrecord')}}' method="POST">
+                <h2>student information</h2>
+                Name:<br>
+                <input type='text' name='nm'/><br>
+                ADDRESS:<br>
+                <textarea type="text" name="add"></textarea><br>
+                City:<br>
+                <input type='text' name='city' id=''><br>
+                Pincode:<br>
+                <input type='text' name='pin' id=''><br><br>
+
+                <input type="submit" value='submit'><br>
+              </form>
+      </div>
+  </body>
+</html>

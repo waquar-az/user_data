@@ -1,0 +1,35 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <!-- <meta name="viewport" content="width=device-width,">  -->
+    
+    <title>DOCUMENT</title>
+     <link rel='stylesheet' type='text/css' href='static/style.css'>
+</head>
+<body>
+     <div class='adduser'>
+                <h1>i am list Record</h1>
+                
+                <table border="1">
+
+                    <thread >
+                        <td bgcolor="red">Name</td>
+                        <td bgcolor="red">Address</td>
+                        <td bgcolor="red">City</td>
+                        <td bgcolor="red">Pincode</td>
+                    </thread> 
+                        
+                    {% for row in rows %}
+                    <tr class="roww">
+                            <td>{{row['name']}}</td>
+                            <td>{{row['addr']}}</td>
+                            <td>{{row['city']}}</td>
+                            <td>{{row['pin']}}</td> 
+                        </tr> 
+                    {% endfor %}
+                </table>    
+                <a href="/" class="adduser">Go to Home Page</a>
+     </div>            
+</body>       
+</html>
